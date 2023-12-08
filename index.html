@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter</title>
+  <style>
+      * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    /* font-size: 10px; */
+    /* 10px / 16px = 0.625 = 62.5% */
+    /* Percentage of user's browser font-size setting */
+    font-size: 62.5%;
+    overflow-x:hidden ;
+  }
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: #c5f6fa;
+  overflow-x: hidden;
+}
+.display{
+  max-width: 40rem;
+  margin: 28rem auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4.4rem;
+}
+h1{
+  color: #212529;
+  font-size: 4.4rem;
+}
+
+.display-number{
+  font-size: 8.4rem;
+  font-weight: 500;
+  color: green;
+}
+
+button{
+  color: #212529;
+  border: 2px solid #212529;
+  padding: 0.6rem 1.6rem;
+  font-size: 1.8rem;
+  background-color: #c5f6fa;
+  border-radius: 0.6rem;
+  transition: all 0.5s;
+}
+
+button:active{
+background-color: white;
+color: #212529;
+}
+
+.btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+  </style>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="display">
+    <h1>Counter</h1>
+    <span class="display-number">0</span>
+    <div class="btns">
+      <button class="decrease">Decrease</button>
+      <button class="reset">Reset</button>
+      <button class="increase">Increase</button>
+    </div>
+  </div>
+</body>
+</html>
